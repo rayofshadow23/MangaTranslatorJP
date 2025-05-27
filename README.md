@@ -29,3 +29,24 @@ Perfetto per chi vuole tradurre manga digitalizzati in modo rapido e con risulta
    ```bash
    sudo apt update
    sudo apt install tesseract-ocr tesseract-ocr-jpn
+2. Installa le librerie Python necessarie:
+
+   ```bash
+   pip install openai pillow pytesseract
+
+3. Clona questo repository
+   ```bash
+   git clone https://github.com/tuo-username/MangaTranslatorJP.git
+   cd MangaTranslatorJP
+
+4. Inserisci la tua API key OpenAI nel file translator.py (oppure usa variabili d’ambiente).
+5. Prepara la cartella manga_pages con le immagini delle pagine manga (formati supportati: PNG, JPG).
+
+## Uso
+Esegui lo script:
+```bash
+python translator.py
+
+Il programma elaborerà tutte le immagini in manga_pages/ e genererà un file traduzioni_manga.txt con il testo originale e la traduzione italiana per ogni pagina.
+
+
